@@ -1,0 +1,23 @@
+Source: node-shebang-command
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.8
+Homepage: https://github.com/kevva/shebang-command#readme
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-shebang-command.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-shebang-command.git
+
+Package: node-shebang-command
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-shebang-regex (>= 1.0.0)
+Description: Get the command from a shebang
+ .
+ Node.js is an event-based server-side JavaScript engine.
