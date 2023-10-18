@@ -1,5 +1,5 @@
-version=3
+version=4
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-shebang-command-$1.tar.gz/ \
- https://github.com/kevva/shebang-command/tags .*/archive/v?([\d\.]+).tar.gz
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-shebang-command-$1/ \
+ https://github.com/kevva/shebang-command/tags .*/archive/.*/v?([\d\.]+).tar.gz
